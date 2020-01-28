@@ -1,5 +1,5 @@
 import React from "react";
-
+//prueba para branch funcionalidad-FR
 class SearchBar extends React.Component {
   render() {
     return (
