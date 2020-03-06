@@ -1,4 +1,5 @@
 import React from "react";
+import "./search-bar.css";
 
 class SearchBar extends React.Component {
   //creo la funcion para recibir los datos del input
@@ -16,36 +17,29 @@ class SearchBar extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col-md-3">Demo Logo</div>
-            <div className="col-md-4">
-              <form
-                className="form-inline"
-                onSubmit={this.handleSumbit}
-                name="Resultado de la prueba: "
-              >
-                <div className="form-group mb-2"></div>
-                <div className="form-group mx-sm-3 mb-2">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Buscar banda"
-                    onChange={this.handleChange}
-                    name="Prueba del buscador"
-                  />
-                </div>
-                <button
-                  type="submit"
-                  className="btn btn-primary mb-2"
-                  onClick={this.handleClick}
-                >
-                  Buscar
-                </button>
-              </form>
-            </div>
-            <hr />
+        <div className="row">
+          <div className="col-md-2">
+            <img src="" alt="" className="logo-barra" />
           </div>
+          <div className="col-md-4">
+            <form
+              className="form-inline"
+              onSubmit={this.handleSumbit}
+              name="Resultado de la prueba: "
+            >
+              <div className="busqueda">
+                <input
+                  name="Prueba del buscador"
+                  type="text"
+                  id="buscar"
+                  className="form-control"
+                  placeholder="Buscar banda"
+                  onChange={this.handleChange}
+                />
+              </div>
+            </form>
+          </div>
+          <hr />
         </div>
       </React.Fragment>
     );
