@@ -2,8 +2,13 @@ import React from "react";
 import "./search-bar.css";
 
 class SearchBar extends React.Component {
+  state = {
+    busqueda: ""
+  };
+
   //creo la funcion para recibir los datos del input
   handleChange = e => {
+    this.setState({ [e.target.name]: e.target.value });
     console.log(e.target.name, e.target.value);
   };
 
@@ -21,7 +26,7 @@ class SearchBar extends React.Component {
           <div className="col-md-2">
             <img src="" alt="" className="logo-barra" />
           </div>
-          <div className="col-md-4">
+          <div className="col-md-6">
             <form
               className="form-inline"
               onSubmit={this.handleSumbit}
@@ -32,7 +37,6 @@ class SearchBar extends React.Component {
                   name="Prueba del buscador"
                   type="text"
                   id="buscar"
-                  className="form-control"
                   placeholder="Buscar banda"
                   onChange={this.handleChange}
                 />
