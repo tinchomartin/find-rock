@@ -38,7 +38,7 @@ class SearchBar extends React.Component {
                   value={this.state.busqueda}
                   type="text"
                   id="buscar"
-                  placeholder="Buscar banda"
+                  placeholder="Buscar una banda"
                   onChange={this.handleChange}
                 />
               </div>
