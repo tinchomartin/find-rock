@@ -34,7 +34,8 @@ class SearchBar extends React.Component {
             >
               <div className="busqueda">
                 <input
-                  name="Prueba del buscador"
+                  name="busqueda"
+                  value={this.state.busqueda}
                   type="text"
                   id="buscar"
                   placeholder="Buscar banda"
