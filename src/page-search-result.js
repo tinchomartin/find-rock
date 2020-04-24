@@ -5,12 +5,12 @@ import SearchResult from "./components/search-result.js";
 
 class PageSearchResult extends Component {
   state = {
-    busqueda: ""
+    busqueda: "",
   };
 
-  handleChange = e => {
+  handleChange = (e) => {
     this.setState({
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
@@ -21,7 +21,7 @@ class PageSearchResult extends Component {
           onChange={this.handleChange}
           busqueda={this.state.busqueda}
         />
-        <SearchResult />
+        <SearchResult busqueda={this.state.busqueda} />
       </React.Fragment>
     );
   }

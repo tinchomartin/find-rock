@@ -1,0 +1,839 @@
+#CUSTXDB=
+#(DESCRIPTION=
+#   (ADDRESS=(PROTOCOL=TCP)(HOST=rgmap1-scan.dtvpan.com)(PORT=1521)
+#   (LOAD_BALANCE = yes)
+#    )
+#    (CONNECT_DATA=
+#      (SERVER=dedicated)
+#      (SERVICE_NAME=CUSTXDB.dtvpan.com)
+#    )
+#  )
+
+#SMARTDBAR=
+#  (DESCRIPTION=
+#    (ADDRESS=
+#      (PROTOCOL=TCP)
+#      (HOST=172.22.162.20)
+#      (PORT=1521)
+#    )
+#    (CONNECT_DATA=
+#      (SID=smartdb)
+#    )
+#  )
+
+CUSTXDB =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = rgmap3-scan.dtvpan.com)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = custxdb.dtvpan.com)
+    )
+  )
+
+SMARTDBAR =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = rgmap3-scan.dtvpan.com)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = smartdb.dtvpan.com)
+    )
+  )
+
+STAGING =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = rgmap3-scan.dtvpan.com)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = staging.dtvpan.com)
+    )
+  )
+
+### IBS ECUADOR ###
+#ibsec =
+#(DESCRIPTION =
+#     (ADDRESS_LIST =
+#         (ADDRESS = (PROTOCOL = TCP) (HOST = 172.22.127.96) (PORT = 1521))
+#     )
+#     (CONNECT_DATA =
+#       (SID  = ibsec)
+#     )
+#  )
+
+#ibsec =
+#  (DESCRIPTION =
+#    (ADDRESS = (PROTOCOL = TCP)(HOST = 172.22.59.59)(PORT = 1599))
+#    (CONNECT_DATA =
+#      (SERVER = DEDICATED)
+#      (SERVICE_NAME = d1_ecu.directvla.com.co)
+#    )
+#  )
+
+##IBSEC el correcto
+#ibsec =
+#  (DESCRIPTION =
+#    (ADDRESS = (PROTOCOL = TCP)(HOST = rgbidbp1722.dtvpan.com)(PORT = 1521))
+#    (CONNECT_DATA =
+#      (SERVICE_NAME = ibsec)
+#    )
+#  )
+
+## IBS ECUADOR DC COL ##
+#ibsec=
+#  (DESCRIPTION =
+#    (ADDRESS = (PROTOCOL = TCP)(HOST = rgmap5-scan.dtvpan.com)(PORT = 1521))
+#    (CONNECT_DATA =
+#      (SERVER = DEDICATED)
+#      (SERVICE_NAME = d1_ecu.dtvpan.com)
+#    )
+#  )
+
+## Replica IBS ECUADOR ##
+
+ibsec =
+	(DESCRIPTION =
+     (ADDRESS = (PROTOCOL = TCP)(HOST = rgmap2-scan2.dtvpan.com)(PORT = 1521))
+     (CONNECT_DATA =
+       (SERVER = DEDICATED)
+       (SERVICE_NAME = ibscn.dtvpan.com)
+      
+     )
+   )
+
+#ibsec=
+#	(DESCRIPTION =
+#     (ADDRESS = (PROTOCOL = TCP)(HOST = rdp5-scan2.dtvpan.com)(PORT = 1521))
+#     (CONNECT_DATA =
+#       (SERVER = DEDICATED)
+#       (SERVICE_NAME = cnibssats.dtvpan.com)
+#       
+#     )
+#   )
+
+#ibsec=
+#	(DESCRIPTION =
+#     (ADDRESS = (PROTOCOL = TCP)(HOST = rgmap5-scan.dtvpan.com)(PORT = 1521))
+#     (CONNECT_DATA =
+#       (SERVER = DEDICATED)
+#       (SERVICE_NAME = d1cn.dtvpan.com)
+#       
+#     )
+#   )
+
+
+#ibsec=
+#  (DESCRIPTION =
+#    (ADDRESS = (PROTOCOL = TCP)(HOST = rgmap2-scan.dtvpan.com)(PORT = 1521))
+#    (CONNECT_DATA =
+#      (SERVER = DEDICATED)
+#      (SERVICE_NAME = IBSEC)
+#      (SERVICE_NAME = ibscn.dtvpan.com)
+#    )
+#  )
+
+#ibsec =
+#  (DESCRIPTION =
+#    (ADDRESS = (PROTOCOL = TCP)(HOST = 172.22.162.142 ) (PORT = 1521))
+#    (CONNECT_DATA =
+#      (SERVER = DEDICATED)
+#      (SERVICE_NAME = ecibsr1)
+#    )
+#  )
+
+
+
+### IBS CHILE ###
+#ibscl =
+#  (DESCRIPTION =
+#    (ADDRESS = (PROTOCOL = TCP)(Host = rgbidbp1722.dtvpan.com)(Port = 1521))
+#    (CONNECT_DATA =
+#      (service_name = ibscl.directv.cl)
+#    )
+#  )
+
+IBSCL =
+(DESCRIPTION =
+  (ADDRESS = (PROTOCOL = TCP)(HOST = rgmap2-scan.dtvpan.com)(PORT = 1521))
+  (CONNECT_DATA =
+    (SERVER = DEDICATED)
+#    (SERVICE_NAME = ibscs.dtvpan.com)
+     (SERVICE_NAME = clibssass.dtvpan.com)
+  )
+)
+
+
+## IBS Chile DRP ##
+#ibscl =
+#  (DESCRIPTION =
+#    (ADDRESS = (PROTOCOL = TCP)(HOST = 172.22.162.141)(PORT = 1521))
+#    (CONNECT_DATA =
+#      (SERVER = DEDICATED)
+#      (SERVICE_NAME = clibsr1.directv.cl)
+#    )
+#  )
+
+
+### IBS COLOMBIA ###
+#ibsco =
+#   (DESCRIPTION =
+#     (ADDRESS_LIST =
+#         (ADDRESS = (PROTOCOL = TCP) (HOST = 172.22.127.96) (PORT = 1521))
+#     )
+#     (CONNECT_DATA =
+#       (SID  = ibsco)
+#     )
+#  )
+
+#ibsco =
+#  (DESCRIPTION =
+#    (ADDRESS = (PROTOCOL = TCP)(HOST = 172.22.59.59)(PORT = 1599))
+#    (CONNECT_DATA =
+#      (SERVER = DEDICATED)
+#      (SERVICE_NAME = d1col.directvla.com.co)
+#    )
+#  )
+
+#ibsco =
+#  (DESCRIPTION =
+#    (ADDRESS = (PROTOCOL = TCP)(HOST = rgbidbp1722.dtvpan.com)(PORT = 1521))
+#    (CONNECT_DATA =
+#      (SERVICE_NAME = ibsco.directvla.com.co)
+#    )
+#  )
+
+## replica IBS CO D1COL ##
+#IBSCO =
+#  (DESCRIPTION =
+#    (ADDRESS = (PROTOCOL = TCP)(HOST = rgmap5-scan.dtvpan.com)(PORT = 1521))
+#    (CONNECT_DATA =
+#      (SERVER = DEDICATED)
+#      (SERVICE_NAME = d1col.dtvpan.com)
+#    )
+#  )
+
+## Produccion IBS CO D1COL ##
+#IBSCOPROD =
+#  (DESCRIPTION =
+#    (ADDRESS = (PROTOCOL = TCP)(HOST = rdp5-scan1.dtvpan.com)(PORT = 1521))
+#    (CONNECT_DATA =
+#      (SERVER = DEDICATED)
+#      (SERVICE_NAME = pdncol.dtvpan.com)
+#    )
+#  )
+
+## replica IBS CO EXA 4 AR ##
+#IBSCO =
+#  (DESCRIPTION =
+#    (ADDRESS = (PROTOCOL = TCP)(HOST = rdp4-scan4.dtvpan.com)(PORT = 1521))
+#    (CONNECT_DATA =
+#      (SERVER = DEDICATED)
+#      (SERVICE_NAME = coibsr)
+#    )
+#  )
+
+## REPLICA IBS CO ##
+#IBSCO =
+#  (DESCRIPTION =
+#    (ADDRESS = (PROTOCOL = TCP)(HOST = rgmap2-scan.dtvpan.com)(PORT = 1521))
+#    (CONNECT_DATA =
+#      (SERVER = DEDICATED)
+#      (SERVICE_NAME = ibsco)
+#    )
+#  )
+  
+#IBSCO =
+#  (DESCRIPTION =
+#    (ADDRESS = (PROTOCOL = TCP)(HOST = rdp5-scan2.dtvpan.com)(PORT = 1521))
+#    (CONNECT_DATA =
+#      (SERVER = DEDICATED)
+#      (SERVICE_NAME = cnibssats.dtvpan.com)
+#    )
+#  )
+  
+IBSCO =
+	(DESCRIPTION =
+		(ADDRESS = (PROTOCOL = TCP)(HOST = rgmap2-scan.dtvpan.com)(PORT = 1521))
+		(CONNECT_DATA =
+			(SERVER = DEDICATED)
+			(SERVICE_NAME = ibscn.dtvpan.com)
+
+		)
+	)  
+
+### IBS PERU ###
+#ibspe =
+#(DESCRIPTION =
+#     (ADDRESS_LIST =
+#         (ADDRESS = (PROTOCOL = TCP) (HOST = 172.22.127.96) (PORT = 1521))
+#     )
+#     (CONNECT_DATA =
+#       (SID  = ibspe)
+#     )
+#  )
+
+#ibspe =
+#(DESCRIPTION =
+#     (ADDRESS_LIST =
+#         (ADDRESS = (PROTOCOL = TCP) (HOST = 172.22.59.59) (PORT = 1599))
+#     )
+#     (CONNECT_DATA =
+#       (SERVER=dedicated)
+#       (SERVICE_NAME  = dm1per.directvla.com.co)
+#     )
+#  )
+
+#IBSPE correcto
+#ibspe =
+#  (DESCRIPTION =
+#    (ADDRESS = (PROTOCOL = TCP)(Host = rgbidbp1722.dtvpan.com)(Port = 1521))
+#    (CONNECT_DATA =
+#      (service_name = ibspe.directvla.com.co)
+#    )
+#  )
+
+## REPLICA IBS PE ##
+#IBSPE =
+#  (DESCRIPTION =
+#    (ADDRESS = (PROTOCOL = TCP)(HOST = rgmap2-scan.dtvpan.com)(PORT = 1521))
+#    (CONNECT_DATA =
+#      (SERVER = DEDICATED)
+#      (SERVICE_NAME = ibspe)
+#    )
+#  )
+
+IBSPE =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = rdp4-scan4.dtvpan.com)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = peibssats.dtvpan.com)
+    )
+  )
+
+IBSPE2 =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = rgmap2-scan.dtvpan.com )(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = ibscsx.dtvpan.com)
+    )
+  )
+
+#ibspe =
+#  (DESCRIPTION =
+#    (ADDRESS = (PROTOCOL = TCP)(HOST = 172.22.162.142 )(PORT = 1521))
+#    (CONNECT_DATA =
+#      (SERVER = DEDICATED)
+#      (SERVICE_NAME = peibsr1.directvla.com.co)
+#    )
+#  )
+
+
+### IBS VENEZUELA ###
+#ibsve =
+#(DESCRIPTION =
+#     (ADDRESS_LIST =
+#         (ADDRESS = (PROTOCOL = TCP) (HOST = 172.22.127.96) (PORT = 1521))
+#     )
+#     (CONNECT_DATA =
+#       (SID  = DTVPRDCS)
+#     )
+#  )
+
+#ibsve =
+#(DESCRIPTION =
+#     (ADDRESS_LIST =
+#         (ADDRESS = (PROTOCOL = TCP) (HOST = 172.22.127.165) (PORT = 1521))
+#     )
+#     (CONNECT_DATA =
+#no       (SERVICE_NAME  = IBSDRVZ)
+#       (SID=DTVPRDCS)
+#     )
+#  )
+
+
+############Venezuela############
+IBSVE =
+(DESCRIPTION =
+  (ADDRESS = (PROTOCOL = TCP)(HOST = VZDBDRP01)(PORT = 1521))
+  (CONNECT_DATA =
+    (SERVER = DEDICATED)
+    (SERVICE_NAME = ibsve)
+  )
+)
+
+########## DRP Venezuela ##########
+#IBSVE =
+#(DESCRIPTION =
+#  (ADDRESS = (PROTOCOL = TCP)(HOST = 172.22.127.165)(PORT = 1521))
+#  (CONNECT_DATA =
+#    (SERVER = DEDICATED)
+#    (SERVICE_NAME = ibsdrvz.directv.cl)
+#  )
+#)
+
+
+#IBSVE =
+#  (DESCRIPTION =
+#    (ADDRESS = (PROTOCOL = TCP)(HOST = VZDBDRP01)(PORT = 1521))
+#    (CONNECT_DATA =
+#      (SERVER = DEDICATED)
+#      (SERVICE_NAME = DTVPRDCS)
+#    )
+#  )
+
+
+
+#ibsve =
+#(DESCRIPTION =
+#     (ADDRESS_LIST =
+#         (ADDRESS = (PROTOCOL = TCP) (HOST = 172.22.127.165) (PORT = 1521))
+#     )
+#     (CONNECT_DATA =
+#       (SERVICE_NAME  =ibsdrvz.directv.cl )
+#     )
+#  )
+
+### IBS PUERTO RICO ###
+#IBSPR =
+#  (DESCRIPTION =
+#    (ADDRESS = (PROTOCOL = TCP)(HOST = 172.22.127.96)(PORT = 1521))
+#    (CONNECT_DATA =
+#      (SERVER = DEDICATED)
+#      (SERVICE_NAME = ibspr)
+#    )
+#  )
+
+
+#IBSPR =
+#  (DESCRIPTION =
+#    (ADDRESS = (PROTOCOL = TCP)(HOST = 172.22.64.49)(PORT = 1521))
+#    (CONNECT_DATA =
+#      (SERVER = DEDICATED)
+#      (SERVICE_NAME = IBS)
+#    )
+#  )
+
+##El productivo
+#IBSPR =
+#  (DESCRIPTION =
+#    (ADDRESS = (PROTOCOL = TCP)(Host = rgbidbp1722.dtvpan.com)(Port = 1521))
+#    (CONNECT_DATA =
+#      (service_name = ibspr)
+#    )
+#  )
+
+#IBSPR =
+#  (DESCRIPTION =
+#    (ADDRESS = (PROTOCOL = TCP)(HOST = rgmap2-scan.dtvpan.com)(PORT = 1521))
+#    (CONNECT_DATA =
+#      (SERVER = DEDICATED)
+#      (SERVICE_NAME = ibspr.dtvpan.com)
+#    )
+#  )
+
+#IBSPR=
+#  (DESCRIPTION =
+#    (ADDRESS = (PROTOCOL = TCP)(HOST = 172.22.162.141 )(PORT = 1521))
+#    (CONNECT_DATA =
+#      (SERVER = DEDICATED)
+#      (SERVICE_NAME = pribsr1)
+#    )
+#  )
+
+IBSPR =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = rgmap2-scan.dtvpan.com)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = ibspr.dtvpan.com)
+    )
+  )
+
+#IBSPR =
+#  (DESCRIPTION =
+#    (ADDRESS = (PROTOCOL = TCP)(HOST = rdp3-scan)(PORT = 1521))
+#    (CONNECT_DATA =
+#      (SERVER = DEDICATED)
+#      (SERVICE_NAME = pribsr1.dtvpan.com)
+#    )
+#  )
+
+
+
+### IBS CARIBE ###
+#IBSCA =
+#(DESCRIPTION =
+#     (ADDRESS_LIST =
+#         (ADDRESS = (PROTOCOL = TCP) (HOST = 172.22.127.96) (PORT = 1521))
+#     )
+#     (CONNECT_DATA =
+#       (SID  = ibstt)
+#     )
+#  )
+
+
+#IBSCA =
+#(DESCRIPTION =
+#     (ADDRESS_LIST =
+#         (ADDRESS = (PROTOCOL = TCP) (HOST = 172.22.162.141) (PORT = 1521))
+#     )
+#     (CONNECT_DATA =
+#       (SERVICE_NAME  = ttibsr1)
+#     )
+#  )
+
+
+#ibsca =
+#  (DESCRIPTION =
+#    (ADDRESS = (PROTOCOL = TCP)(Host = rgbidbp1722.dtvpan.com)(Port = 1521))
+#    (CONNECT_DATA =
+#      (service_name = ibstt)
+#    )
+#  )
+
+##IBS Caribe POST Migracion ##
+ibsca =
+(DESCRIPTION =
+  (ADDRESS = (PROTOCOL = TCP)(HOST = rgmap2-scan.dtvpan.com)(PORT = 1521))
+  (CONNECT_DATA =
+    (SERVER = DEDICATED)
+    (SERVICE_NAME = ibsca.dtvpan.com)
+  )
+)
+
+#ibsca =
+#  (DESCRIPTION =
+#    (ADDRESS = (PROTOCOL = TCP)(HOST = rdp3-scan)(PORT = 1521))
+#    (CONNECT_DATA =
+#      (SERVER = DEDICATED)
+#      (SERVICE_NAME = ttibsr1.dtvpan.com)
+#    )
+#  )
+
+#ibsca =
+#  (DESCRIPTION =
+#    (ADDRESS = (PROTOCOL = TCP)(HOST = rgmadbp1901.dtvpan.com)(PORT = 1521))
+#    (CONNECT_DATA =
+#      (SERVER = DEDICATED)
+#      (SID = ibstt)
+#    )
+#  )
+
+
+## IBS ARGENTINA EXADATA 3 ##
+#IBSARLINK =
+#  (DESCRIPTION =
+#    (ADDRESS = (PROTOCOL = TCP)(HOST = rdp3-scan.dtvpan.com)(PORT = 1521))
+#    (CONNECT_DATA =
+#      (SERVER = DEDICATED)
+#      (SERVICE_NAME = svc_rgibso1_appl_sas)
+#    )
+#  )
+
+
+#IBSAR =
+#  (DESCRIPTION =
+#    (ADDRESS = (PROTOCOL = TCP)(HOST = rdp3-scan.dtvpan.com)(PORT = 1521))
+#    (CONNECT_DATA =
+#      (SERVER = DEDICATED)
+#      (SERVICE_NAME = svc_rgibso1_appl_sas)
+#    )
+#  )
+
+#IBSARLINK =
+#  (DESCRIPTION =
+#    (ADDRESS = (PROTOCOL = TCP)(HOST = rdp1-scan.dtvpan.com)(PORT = 1521))
+#    (CONNECT_DATA =
+#      (SERVER = DEDICATED)
+#      (SERVICE_NAME = aribsdm1s)
+#    )
+#  )
+
+
+#IBSAR =
+#  (DESCRIPTION =
+#    (ADDRESS = (PROTOCOL = TCP)(HOST = rdp1-scan.dtvpan.com)(PORT = 1521))
+#    (CONNECT_DATA =
+#      (SERVER = DEDICATED)
+#      (SERVICE_NAME = aribsdm1s)
+#    )
+#  )
+
+##  IBS ARGENTINA EXA 3  ##
+IBSARLINK =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = rdp3-scan.dtvpan.com)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = aribsdm1s.dtvpan.com)
+    )
+  )
+
+IBSAR =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = rdp3-scan.dtvpan.com)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = aribsdm1s.dtvpan.com)
+    )
+  )
+
+
+
+DRP_IBS6_ARGENTINA  =
+(DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 172.22.162.145)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = aribsr1)
+    )
+  )
+
+
+## IBS URUGUAY EXADATA 3 ##
+## IBS Uruguay POST Migracion ##
+#IBSUY =
+#  (DESCRIPTION =
+#    (ADDRESS = (PROTOCOL = TCP)(HOST = rdp3-scan.dtvpan.com)(PORT = 1521))
+#    (CONNECT_DATA =
+#      (SERVER = DEDICATED)
+#      (SERVICE_NAME = uyodsp1.dtvpan.com)
+#    )
+#  )
+
+IBSUY =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = rgmap2-scan.dtvpan.com )(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+#      (SERVICE_NAME = ibscs.dtvpan.com)
+      (SERVICE_NAME = uyibssass.dtvpan.com)
+    )
+  )
+
+#datalake ambientes bajos
+RGLAKED =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = rgbidbd2183.dtvdev.net)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = rglaked)
+    )
+  )
+
+#datalake productivo
+DATALAKE =
+  (DESCRIPTION =
+    (addrESS = (PROTOCOL = TCP)(HOST = rgmap7-scan.dtvpan.com)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = lake.dtvpan.com)
+    )
+  )
+
+
+### DRP ###
+
+##URUGUAY DRP##
+#UYIBSDR1_STANDBY =
+#  (DESCRIPTION =
+#    (ADDRESS = (PROTOCOL = TCP)(HOST = 172.20.127.20)(PORT = 1575))
+#    (CONNECT_DATA =
+#      (SERVER = DEDICATED)
+#      (SERVICE_NAME = uyibsdr1)
+#    )
+#  )
+
+UYIBSDR1_STANDBY =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = rdp6db01vm02-dr.dtvpan.com)(PORT = 1575))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = csibsr.dtvpan.com)
+    )
+  )
+
+##COLOMBIA DRP##
+
+D1COL_ODA =
+  (DESCRIPTION =
+    (ADDRESS_LIST = 
+		(ADDRESS = (PROTOCOL = TCP)(HOST = rdp5-scan3)(PORT = 1521))
+		(LOAD_BALANCE = yes)
+    )
+    (CONNECT_DATA = 
+		(SERVICE_NAME = cnsatcol.dtvpan.com)
+		(FAILOVER_MODE = (TYPE = SELECT) (METHOD = BASIC) (RETRIES = 180) (DELAY = 5))
+    )
+  )
+
+#D1COL_ODA =
+#  (DESCRIPTION =
+#    (ADDRESS = (PROTOCOL = TCP)(HOST = rgmap5-scan)(PORT = 1521))
+#    (CONNECT_DATA =
+#      (SERVER = DEDICATED)
+#      (SERVICE_NAME = d1col.dtvpan.com)
+#    )
+#  )
+
+##ECUADOR DRP##
+#D1ECU =
+#  (DESCRIPTION =
+#    (ADDRESS = (PROTOCOL = TCP)(HOST = rgmap5-scan)(PORT = 1521))
+#    (CONNECT_DATA =
+#      (SERVER = DEDICATED)
+#      (SERVICE_NAME = d1_ecu.dtvpan.com)
+#    )
+#  )
+
+D1ECU =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = rdp5-scan2.dtvpan.com)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = cnibssats.dtvpan.com)
+    )
+  )
+
+
+SiebelAR =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = rgmap2-scan.dtvpan.com)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = rgsbp1x.dtvpan.com)
+    )
+  )
+
+clsatp1 =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = rgmap4-scan.dtvpan.com)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = clsatp1.dtvpan.com)
+    )
+  )
+
+## prefacturacion Argentina ##
+aribspfcs =
+ (DESCRIPTION=
+   (ADDRESS=(PROTOCOL=TCP)(HOST=rgmap4-scan.dtvpan.com)(PORT=1521)
+   )
+   (CONNECT_DATA=
+     (SERVICE_NAME=aribfp1)
+   )
+ )
+
+## Prefacturacion Argentina nueva base ##
+PREFACAR =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = ardemkp1826.dtvpan.com)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = prefacar)
+    )
+  )
+
+SGIARG=
+  (DESCRIPTION=
+        (ADDRESS= (PROTOCOL=TCP) (HOST=aribssgi.dtvpan.com) (PORT=1521)
+    )
+    (CONNECT_DATA=
+      (SERVICE_NAME=rgibso1.dtvpan.com)
+    )
+)
+
+TAQUION=
+  (DESCRIPTION=
+    (ADDRESS=
+      (PROTOCOL=TCP)
+      (HOST=rdp3-scan.dtvpan.com)
+      (PORT=1521)
+    )
+    (CONNECT_DATA=
+      (SERVER=dedicated)
+      (SERVICE_NAME=aribstaquion.dtvpan.com)
+    )
+  )
+
+## HSP Colombia Produccion
+HSPPROD =
+  (DESCRIPTION =
+    (addrESS = (PROTOCOL = TCP)(HOST = rdp4-scan3.dtvpan.com)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = cohsp.dtvpan.com)
+    )
+  )
+
+PDNAVAYA =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = rgmap5-scan.dtvpan.com)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = pdnavaya.dtvpan.com)
+    )
+)
+
+UYAPPSAT =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = rgmap4-scan.dtvpan.com)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = UYAPPSAT.dtvpan.com)
+    )
+  )
+
+
+## DMCE NEW ##
+DMCEnew =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 172.22.162.6)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SID = dmce)
+    )
+  )
+
+DMCE =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = rgmawlp2026.dtvpan.com)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = dmce)
+    )
+  )
+
+#ECIBSR =
+#  (DESCRIPTION =
+#    (ADDRESS = (PROTOCOL = TCP)(HOST = rdp4-scan4.dtvpan.com)(PORT = 1521))
+#    (CONNECT_DATA =
+#      (SERVER = DEDICATED)
+#      (SERVICE_NAME = cnibsr.dtvpan.com)
+#    )
+#  )
+
+ECIBSR =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = rdp5-scan2.dtvpan.com)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = cnibssats.dtvpan.com)
+    )
+  )
+
+CDRASPECT =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = rdp4-scan2.dtvpan.com)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = PDNASPECT)
+    )
+  )
+
+rgdwhdvm_medium = (description= (address=(protocol=tcps)(port=1522)(host=adb.us-ashburn-1.oraclecloud.com))(connect_data=(service_name=nqwgd2l4na5lwqe_rgdwhdvm_medium.adwc.oraclecloud.com))(security=(ssl_server_cert_dn=
+        "CN=adwc.uscom-east-1.oraclecloud.com,OU=Oracle BMCS US,O=Oracle Corporation,L=Redwood City,ST=California,C=US"))   )

@@ -1,10 +1,11 @@
 import React from "react";
 import "./search-bar.css";
+import logo from "../download.svg";
 
 class SearchBar extends React.Component {
-  state = {
-    busqueda: ""
-  };
+  // state = {
+  //   busqueda: ""
+  // };
 
   //creo la funcion para recibir los datos del input
   handleChange = e => {
@@ -24,7 +25,7 @@ class SearchBar extends React.Component {
       <React.Fragment>
         <div className="row">
           <div className="col-md-2">
-            <img src="" alt="" className="logo-barra" />
+            <img src={logo} alt="" className="logo-barra" />
           </div>
           <div className="col-md-6">
             <form
@@ -35,11 +36,11 @@ class SearchBar extends React.Component {
               <div className="busqueda">
                 <input
                   name="busqueda"
-                  value={this.state.busqueda}
+                  value={this.props.busqueda}
                   type="text"
                   id="buscar"
                   placeholder="Buscar una banda"
-                  onChange={this.handleChange}
+                  onChange={this.props.onChange}
                 />
               </div>
             </form>
