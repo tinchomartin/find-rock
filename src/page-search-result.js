@@ -16,6 +16,7 @@ class PageSearchResult extends Component {
 
   render() {
     return (
+      // react fragment permite poner mas de un componente/elemento
       <React.Fragment>
         <SearchBar
           onChange={this.handleChange}

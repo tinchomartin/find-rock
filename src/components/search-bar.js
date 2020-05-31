@@ -1,6 +1,7 @@
 import React from "react";
 import "./search-bar.css";
 import logo from "../download.svg";
+import { Link } from "react-router-dom";
 
 class SearchBar extends React.Component {
   // state = {
@@ -8,14 +9,14 @@ class SearchBar extends React.Component {
   // };
 
   //creo la funcion para recibir los datos del input
-  handleChange = e => {
+  handleChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });
     console.log(e.target.name, e.target.value);
   };
 
   //creo la funcion para enviar los datos del input. e = evento, target = elemento llamado
   //el preventdefault ayuda a que la página no se refresque
-  handleSumbit = e => {
+  handleSumbit = (e) => {
     e.preventDefault();
     console.log(e.target.name);
   };
@@ -25,7 +26,9 @@ class SearchBar extends React.Component {
       <React.Fragment>
         <div className="row">
           <div className="col-md-2">
-            <img src={logo} alt="" className="logo-barra" />
+            <Link to="/">
+              <img src={logo} alt="" className="logo-barra" />
+            </Link>
           </div>
           <div className="col-md-6">
             <form
