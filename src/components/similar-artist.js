@@ -12,18 +12,15 @@ class SimilarArtist extends React.Component {
         </div>
 
         <div className="row">
-          <div className="col-md-3">
-            <ArtistCard img="https://via.placeholder.com/350x350" />
-          </div>
-          <div className="col-md-3">
-            <ArtistCard img="https://via.placeholder.com/350x350" />
-          </div>
-          <div className="col-md-3">
-            <ArtistCard img="https://via.placeholder.com/350x350" />
-          </div>
-          <div className="col-md-3">
-            <ArtistCard img="https://via.placeholder.com/350x350" />
-          </div>
+          {this.props.data.slice(0, 4).map((item, i) => {
+            return (
+              <ArtistCard
+                img={item.image[3]["#text"]}
+                titulo={item.name}
+                key={i}
+              />
+            );
+          })}
         </div>
       </React.Fragment>
     );

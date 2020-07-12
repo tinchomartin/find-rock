@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 //import ReactDOM from "react-dom";
 import "./artist-card.css";
 
@@ -10,7 +10,7 @@ function Footer(props) {
       {children}
       <div className="row">
         <div className="col-md-12 centrar">
-          <p>Todos los derechos reservados a EDR</p>
+          <p>Proyecto realizado por Martín</p>
         </div>
       </div>
     </React.Fragment>

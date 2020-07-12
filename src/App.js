@@ -18,7 +18,7 @@ class App extends Component {
           <Switch>
             <Route exact path="/busqueda" component={PageSearchResult} />
             <Route exact path="/artista" component={PageArtist} />
-            <Route patch="/" component={PageHome} />
+            <Route path="/" component={PageHome} />
           </Switch>
         </Footer>
       </BrowserRouter>

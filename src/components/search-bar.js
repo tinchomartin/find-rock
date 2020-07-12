@@ -5,20 +5,21 @@ import { Link } from "react-router-dom";
 
 class SearchBar extends React.Component {
   // state = {
-  //   busqueda: ""
+  //   busqueda: "",
   // };
 
   //creo la funcion para recibir los datos del input
   handleChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });
-    console.log(e.target.name, e.target.value);
+    console.log(e.target.name);
   };
 
   //creo la funcion para enviar los datos del input. e = evento, target = elemento llamado
   //el preventdefault ayuda a que la página no se refresque
-  handleSumbit = (e) => {
+  handleSubmit = (e) => {
     e.preventDefault();
-    console.log(e.target.name);
+
+    console.log(this.props.busqueda);
   };
 
   render() {
@@ -33,17 +34,17 @@ class SearchBar extends React.Component {
           <div className="col-md-6">
             <form
               className="form-inline"
-              onSubmit={this.handleSumbit}
-              name="Resultado de la prueba: "
+              onSubmit={this.handleSubmit}
+              name="Resultado de la prueba2: "
             >
               <div className="busqueda">
                 <input
                   name="busqueda"
-                  value={this.props.busqueda}
+                  value={this.props.busqueda || ""}
                   type="text"
                   id="buscar"
                   placeholder="Buscar una banda"
-                  onChange={this.props.onChange}
+                  onChange={this.props.onChange || ""}
                 />
               </div>
             </form>

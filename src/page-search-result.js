@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// import ArtistCard from "./components/artist-card.js";
 import SearchBar from "./components/search-bar.js";
 import SearchResult from "./components/search-result.js";
 
@@ -8,7 +7,18 @@ class PageSearchResult extends Component {
     busqueda: "",
   };
 
+  componentDidMount() {
+    let search = this.props.history.location.search
+      .substr(1)
+      .replace("%20", " ");
+
+    this.setState({
+      busqueda: search,
+    });
+  }
+
   handleChange = (e) => {
+    this.props.history.push("/busqueda?" + e.target.value);
     this.setState({
       [e.target.name]: e.target.value,
     });
