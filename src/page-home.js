@@ -23,6 +23,14 @@ class PageHome extends React.Component {
     });
   };
 
+  //gestiona el cierre del modal para que se actualice el padre
+  handleHide = (e) => {
+    e.preventDefault();
+    this.setState({
+      modal: false,
+    });
+  };
+
   handleChange = (e) => {
     this.setState({
       busqueda: e.target.value,
@@ -60,12 +68,12 @@ class PageHome extends React.Component {
           </div>
         </div>
         {ReactDom.createPortal(
-          <Modal estado={this.state.modal}>
+          <Modal estado={this.state.modal} hide={this.handleHide}>
+            <p>Proyecto realizado en EscuelaDevRock</p>
             <p>
-              Aclaración: La API de LastFM impuso restricciones, motivo por el
-              cual no se muestran las imagenes de los artistas.
+              Aclaración: La API de LastFM impuso restricciones y no muestra las
+              imagenes de los artistas
             </p>
-            <p>Este proyecto fue realizado en el curso de Escuela Dev Rock</p>
           </Modal>,
           document.getElementById("teleport")
         )}

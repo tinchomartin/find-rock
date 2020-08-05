@@ -5,13 +5,6 @@ class Modal extends React.Component {
     estado: this.props.estado,
   };
 
-  handleClick = (e) => {
-    e.preventDefault();
-    this.setState({
-      estado: false,
-    });
-  };
-
   componentWillReceiveProps(e) {
     this.setState({
       estado: e.estado,
@@ -25,7 +18,7 @@ class Modal extends React.Component {
       <React.Fragment>
         <div className="modale">
           <div className="cardModal">
-            <button className="salir" onClick={this.handleClick}>
+            <button className="salir" onClick={this.props.hide}>
               X
             </button>
             {this.props.children}
