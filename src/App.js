@@ -7,9 +7,6 @@ import Footer from "./components/footer.js";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       // el react router ayuda a que se cargue todo en una página pero cada sitio tenga su ruta

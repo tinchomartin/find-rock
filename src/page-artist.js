@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-import SearchBar from "./components/search-bar.js";
+import NoSearchBar from "./components/no-search-bar.js";
 import "./page-artist.css";
 import "./page-home.css";
 import SimilarArtist from "./components/similar-artist.js";
-import { Redirect } from "react-router-dom";
 
 class PageArtist extends Component {
   state = {
@@ -88,10 +87,7 @@ class PageArtist extends Component {
   render() {
     return (
       <React.Fragment>
-        <SearchBar
-          onChange={this.handleChange}
-          busqueda={this.state.busqueda}
-        />
+        <NoSearchBar />
 
         <div className="container">
           <div className="row centrar">
