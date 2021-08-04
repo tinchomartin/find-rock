@@ -24,11 +24,7 @@ class SearchResult extends React.Component {
     );
   }
 
-  // componentDidMount() {
-  //   this.fetchData(
-  //     "http://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist=malena+villa&api_key=6c028a05bb3337cbf567aa148b8839cf&format=json"
-  //   );
-  // }
+
 
   async fetchData(url) {
     try {
@@ -73,7 +69,6 @@ class SearchResult extends React.Component {
               );
             })}
 
-            <h1>{this.props.busqueda}</h1>
           </div>
         </div>
       </React.Fragment>
