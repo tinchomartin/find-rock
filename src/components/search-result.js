@@ -18,7 +18,7 @@ class SearchResult extends React.Component {
   componentWillReceiveProps(e) {
     let termino = e.busqueda;
     this.fetchData(
-      "http://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist=" +
+      "https://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist=" +
         termino +
         "&api_key=d8e5a112499233abfabf4049aa4d39a9&format=json"
     );
