@@ -1,6 +1,5 @@
 import React from "react";
-//import ReactDOM from "react-dom";
-import "./artist-card.css";
+import "../page-home.css"
 
 function Footer(props) {
   const children = props.children;

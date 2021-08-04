@@ -103,3 +103,9 @@ select:-internal-autofill-previewed,
 select:-internal-autofill-selected {
   background-color: white !important;
 }
+
+.footer-text {
+  margin-top: 120px;
+  padding: 0;
+  }
+  
