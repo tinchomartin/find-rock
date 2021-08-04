@@ -10,7 +10,7 @@ function Footer(props) {
       {children}
       <div className="row">
         <div className="col-md-12 centrar">
-          <p>Proyecto realizado por Martín</p>
+          <p className="footer-text">Proyecto realizado por Martín</p>
         </div>
       </div>
     </React.Fragment>
